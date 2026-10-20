@@ -13,7 +13,7 @@ Dashboard interactivo construido con **Streamlit**, **Plotly** y **Seaborn**, co
 
 🚀 **App en vivo:** [LINK DEL SPACE]
 🎥 **Video demo:** [LINK DE YOUTUBE]
-📝 **Artículo en Medium:** [LINK DE MEDIUM]
+📝 **Artículo en Medium:** https://medium.com/@uh2023076795/del-notebook-a-la-nube-dashboards-en-python-con-streamlit-dash-bokeh-shiny-y-seaborn-3010eab314a9?sharedUserId=uh2023076795 
 
 ## Características
 
@@ -84,6 +84,4 @@ dashboard-tips/
 
 ## Equipo
 
-- Nombre 1
-- Nombre 2
-- Nombre 3
+- Usher Damiron Halanocca Rojas
