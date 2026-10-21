@@ -12,29 +12,9 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Estilos CSS personalizados para apariencia moderna
-st.markdown("""
-<style>
-    .main-header {
-        font-size: 2.2rem;
-        font-weight: 700;
-        margin-bottom: 0.2rem;
-    }
-    .sub-header {
-        color: #6c757d;
-        font-size: 1.05rem;
-        margin-bottom: 1.5rem;
-    }
-    div[data-testid="stMetricValue"] {
-        font-size: 1.8rem;
-        font-weight: 600;
-    }
-</style>
-""", unsafe_allow_html=True)
-
 # Título y descripción
-st.markdown('<div class="main-header">📊 Dashboard de Propinas</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-header">Análisis interactivo de hábitos de consumo y propinas usando Streamlit, Plotly y Seaborn.</div>', unsafe_allow_html=True)
+st.title("📊 Dashboard de Propinas")
+st.markdown("Análisis interactivo de hábitos de consumo y propinas usando **Streamlit**, **Plotly** y **Seaborn**.")
 
 # Carga de datos con caché
 @st.cache_data
