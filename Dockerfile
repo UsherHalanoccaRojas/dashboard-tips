@@ -2,13 +2,18 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Crear usuario no root para cumplir con las reglas de seguridad de contenedores (SonarQube S6471)
+# Crear usuario no root (SonarQube S6471)
 RUN useradd -m -u 1000 appuser
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Instalar dependencias con versiones fijadas y solo binarios precompilados (SonarQube S8541, S8544)
+COPY requirements.lock .
+RUN pip install --no-cache-dir --only-binary :all: -r requirements.lock
 
-COPY . .
+# Copiar solo los archivos necesarios en lugar de COPY . . (SonarQube S6470)
+COPY app.py .
+COPY index.html .
+COPY README.md .
+
 RUN chown -R appuser:appuser /app
 
 USER appuser
