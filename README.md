@@ -3,15 +3,14 @@ title: Dashboard Propinas
 emoji: 📊
 colorFrom: blue
 colorTo: green
-sdk: docker
-app_port: 8501
+sdk: static
 ---
 
 # 📊 Dashboard de propinas
 
 Dashboard interactivo construido con **Streamlit**, **Plotly** y **Seaborn**, con despliegue automático mediante **GitHub Actions** en **Hugging Face Spaces**.
 
-🚀 **App en vivo:** [LINK DEL SPACE]
+🚀 **App en vivo:** [https://huggingface.co/spaces/UsherHalanoccaRojas/dashboard-tips](https://huggingface.co/spaces/UsherHalanoccaRojas/dashboard-tips)
 🎥 **Video demo:** [LINK DE YOUTUBE]
 📝 **Artículo en Medium:** [LINK DE MEDIUM]
 
@@ -30,14 +29,14 @@ Dashboard interactivo construido con **Streamlit**, **Plotly** y **Seaborn**, co
 | Dashboard | Streamlit |
 | Gráficos | Plotly, Seaborn, Matplotlib |
 | Datos | Pandas (dataset `tips`) |
-| Contenedor | Docker |
+| Contenedor | Docker / Static |
 | CI/CD | GitHub Actions |
 | Hosting | Hugging Face Spaces |
 
 ## Ejecutar localmente
 
 ```bash
-git clone https://github.com/TU_USUARIO/dashboard-tips.git
+git clone https://github.com/UsherHalanoccaRojas/dashboard-tips.git
 cd dashboard-tips
 python -m venv .venv
 source .venv/bin/activate      # Windows: .venv\Scripts\activate
